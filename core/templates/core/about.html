@@ -1,0 +1,27 @@
+
+
+{%extends 'core/base.html' %}
+
+{% block title %} |Sobre Mi {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers%}
+ <h1>Acerca de</h1>
+ <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">  
+<div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/will.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Wiliams Perez</h2>   
+          <p>Hola
+          Mi nombre es Wiliams  nacido en México del estado de Tlaxcala, tengo 20 años y estdudio Ingenieria en Tecnologias de la Información.</p>
+        </div>
+</div>
+
+{% endblock %}
+
